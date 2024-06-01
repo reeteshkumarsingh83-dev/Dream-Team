@@ -1,0 +1,191 @@
+/* ------------------------------------------------------------------
+                Common CSS starts here
+--------------------------------------------------------------------- */
+
+:root {
+    --body-color: #fff;
+    --tg-theme-secondary: #fff;
+    --title-color: #feed56;
+    --tg-common-color-yellow: #feed56;
+    --tg-theme-primary-h2: #863800;
+    --tg-theme-primary: #863800;
+    --golden_color: #feed56;
+    --brown_color: #863800;
+}
+
+body {
+    background: linear-gradient(285deg, #feed56, #800000);
+    min-height:auto!important;
+    color: #fff;
+}
+
+.section_padding_py {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+@media (max-width: 768px) {
+    .section_padding_py {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .about__content--h3 {
+        padding-top: 0;
+    }
+    .about-facts__title {
+        font-size: 14px;
+    }
+    #pick-one {
+        padding-top: 0 !important;
+        padding-bottom: 0;
+    }
+    .swiper-pagination-bullets {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 420px) {
+    .about-facts ul li:nth-child(1) .about-facts__block,
+    .about-facts ul li:nth-child(2) .about-facts__block,
+    .about-facts ul li:nth-child(3) .about-facts__block {
+        clip-path: none;
+    }
+    .split-line {
+        text-align: center !important;
+    }
+    #about-us-text {
+        text-align: center;
+    }
+}
+.tg-breadcrumb-bg {
+    background-image: url(../img/Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* color changes here */
+
+/* black color */
+.sticky-menu,
+.facts--bg::before,
+.service-grid_content {
+    background-color: var(--tg-theme-primary);
+}
+.service-block--style4 .service-block__title:hover a,
+.section_a_t .client-block p {
+    color: #000 !important;
+}
+
+/* brown color */
+.tg-header__burger,
+.tgmenu__action > ul .header-btn--style2 .btn:hover,
+.service-grid:hover .service-grid_content,
+.facts-block--yellow:hover,
+.service-block--style4 .service-block__icon,
+.service-block--style4:hover .service-block__icon {
+    background-color: var(--brown_color);
+}
+.about-facts__title,
+.service-block--style4 .service-block__number,
+.service-block--style4:hover .service-block__number {
+    color: var(--brown_color);
+}
+
+/* gold color */
+.about__features ul li {
+    color: var(--golden_color);
+}
+.service-grid_icon:after,
+.service-grid_icon:before,
+.service-grid_icon {
+    background-color: var(--golden_color);
+}
+.hero-content__input-button a {
+    text-decoration: none;
+    color: #000;
+}
+/* button */
+.hero-content__input-button,
+.button_theme_1 {
+    background: linear-gradient(180deg, #feed56, #863800);
+    border-radius: 10px;
+    font-family: var(--tg-body-font-family);
+    font-size: 18px;
+    font-weight: 600;
+    color: #000 !important;
+    background-color: var(--tg-theme-primary-h2);
+    border: 0;
+    min-height: 60px;
+    padding: 10px 24px;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    display: inline-flex;
+    align-items: center;
+}
+.hero-content__input-button:hover,
+.button_theme_1:hover {
+    opacity: 0.8;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    color: #000 !important;
+}
+
+/* ------------------------------------------------------------------
+                Common CSS Ends here
+--------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------
+                Home page Starts here
+--------------------------------------------------------------------- */
+
+.main_banner {
+    background-image: url(../img/home/s_1/Header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about__inner-images ul li {
+    max-height: max-content;
+}
+.service-grid_icon img {
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+.facts-block--yellow:hover {
+    border-color: var(--brown_color);
+}
+
+/* ------------------------------------------------------------------
+                Home page Ends here
+--------------------------------------------------------------------- */
+
+.swiper-pagination-bullets .swiper-pagination-bullet:before {
+    background-color: var(--brown_color);
+    border-color: var(--brown_color);
+}
+
+/* ------------------------------------------------------------------
+                Contest page starts here
+--------------------------------------------------------------------- */
+
+.section_c_r_t_t_c .project-block__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section_c_r_t_t_c .project-block__content img {
+    width: 51px;
+}
+.section_c_r_t_t_c .project-block__title {
+    margin-bottom: 0;
+    color: #000;
+}
+
+/* ------------------------------------------------------------------
+                Contest page ends here
+--------------------------------------------------------------------- */
